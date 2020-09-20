@@ -22,7 +22,7 @@ tree.root.right.right = Node(7)
 tree.root.left.left.left = Node(8)
 
 
-class TestStringsAlgorithms(TestCase):
+class TestBinaryTreesAlgorithms(TestCase):
 
     def test_pre_order_traversal(self):
 

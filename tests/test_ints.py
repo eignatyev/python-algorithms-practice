@@ -3,7 +3,7 @@ from unittest import TestCase
 from src.ints import get_odds_by_N
 
 
-class TestStringsAlgorithms(TestCase):
+class TestIntsAlgorithms(TestCase):
 
     def test_get_odds_by_N(self):
 
