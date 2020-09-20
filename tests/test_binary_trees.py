@@ -24,12 +24,32 @@ tree.root.left.left.left = Node(8)
 
 class TestStringsAlgorithms(TestCase):
 
-    def test_preorder_traversal(self):
+    def test_pre_order_traversal(self):
 
         # Positive
-        self.assertEqual(BinaryTree.preorder_traversal(tree.root), [1, 2, 4, 8, 5, 3, 6, 7])
+        self.assertEqual(BinaryTree.pre_order_traversal(tree.root), [1, 2, 4, 8, 5, 3, 6, 7])
 
         # Negative
-        self.assertRaises(TypeError, tree.preorder_traversal)
-        self.assertRaises(TypeError, tree.preorder_traversal, tree.root, tree.root)
-        self.assertRaises(AttributeError, tree.preorder_traversal, 'Banana')
+        self.assertRaises(TypeError, BinaryTree.pre_order_traversal)
+        self.assertRaises(TypeError, BinaryTree.pre_order_traversal, tree.root, tree.root)
+        self.assertRaises(AttributeError, BinaryTree.pre_order_traversal, 'Banana')
+
+    def test_in_order_traversal(self):
+
+        # Positive
+        self.assertEqual(BinaryTree.in_order_traversal(tree.root), [8, 4, 2, 5, 1, 6, 3, 7])
+
+        # Negative
+        self.assertRaises(TypeError, BinaryTree.in_order_traversal)
+        self.assertRaises(TypeError, BinaryTree.in_order_traversal, tree.root, tree.root)
+        self.assertRaises(AttributeError, BinaryTree.in_order_traversal, 'Banana')
+
+    def test_post_order_traversal(self):
+
+        # Positive
+        self.assertEqual(BinaryTree.post_order_traversal(tree.root), [8, 4, 5, 2, 6, 7, 3, 1])
+
+        # Negative
+        self.assertRaises(TypeError, BinaryTree.post_order_traversal)
+        self.assertRaises(TypeError, BinaryTree.post_order_traversal, tree.root, tree.root)
+        self.assertRaises(AttributeError, BinaryTree.post_order_traversal, 'Banana')
