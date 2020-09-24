@@ -8,4 +8,4 @@
 
 ## Run Unit Tests
 
-* `python3 -m unittest tests/test_*`
+* `python3 -m unittest tests/test_* -v`
