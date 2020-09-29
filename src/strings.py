@@ -52,4 +52,4 @@ def is_brackets_balanced(string):
             else:
                 open_brackets_history.pop()
 
-    return False if open_brackets_history else True
+    return not open_brackets_history

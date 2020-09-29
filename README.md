@@ -1,5 +1,9 @@
 # Python Algorithms Practice
 
+## Requirements
+
+* Python 3.6+
+
 ## Prepare the Working Space
 
 * Install [Python3](https://www.python.org/downloads/)
